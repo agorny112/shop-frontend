@@ -1,4 +1,6 @@
+@import "../../../../variables";
+
 :host{
-  background: #bbb;
+  background: $lightgrey;
   padding: 20px;
 }
