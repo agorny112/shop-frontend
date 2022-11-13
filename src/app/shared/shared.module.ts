@@ -22,7 +22,8 @@ import {MaterialModule} from "./material.module";
   exports: [
     FooterComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    MaterialModule
     ]
 })
 export class SharedModule { }

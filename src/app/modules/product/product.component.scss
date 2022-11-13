@@ -1,0 +1,18 @@
+@import "../../../variables";
+
+:host{
+  display: flex;
+  flex-direction: column;
+}
+.productImage{
+  margin-right:10px;
+}
+.productPrice{
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: $warn;
+}
+.productContent{
+  font-size: 18px;
+}

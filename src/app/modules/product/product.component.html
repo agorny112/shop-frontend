@@ -1,1 +1,20 @@
-<p>product works!</p>
+<h1>Products</h1>
+<mat-card>
+  <div fxLayout="row">
+    <div fxLayout="column" fxFlex="">
+      <mat-card-title>Product name</mat-card-title>
+      <mat-card-subtitle>category</mat-card-subtitle>
+      <div fxLayout="row">
+        <img src="assets/image-placeholder.png" mat-card-md-image="" class="productImage">
+        <mat-card-content fxFlex="" class="productContent">About</mat-card-content>
+      </div>
+    </div>
+    <div>
+      <div class="productPrice">Price</div>
+    </div>
+  </div>
+  <mat-card-actions align="end" fxLayoutGap="10">
+    <button mat-flat-button color="accent">Show</button>
+    <button mat-flat-button color="primary">Add</button>
+  </mat-card-actions>
+</mat-card>
