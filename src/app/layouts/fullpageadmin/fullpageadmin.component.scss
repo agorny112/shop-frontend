@@ -1,18 +1,29 @@
-@import "../../../variables";
 
 :host{
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+
 }
 .content{
   padding: 20px;
+  background: #f9f9f9;
 }
 header{
-  background: $darkgrey;
+  background: #292b31;
+  color: #fff;
   padding: 20px;
 }
 .sidebar{
-  background: $lightgrey;
+  background: #292b31;
   padding: 20px;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
 }

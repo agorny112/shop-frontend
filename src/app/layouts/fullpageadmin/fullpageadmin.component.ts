@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullpageadminComponent implements OnInit {
 
+  title = "Shop panel";
+
   constructor() { }
 
   ngOnInit(): void {
