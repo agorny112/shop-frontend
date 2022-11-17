@@ -1,5 +1,5 @@
 <h1>Products</h1>
-<mat-card *ngFor="let product of products">
+<mat-card *ngFor="let product of page?.content">
   <div fxLayout="row">
     <div fxLayout="column" fxFlex="">
       <mat-card-title>{{product.name}}</mat-card-title>
@@ -18,3 +18,10 @@
     <button mat-flat-button color="primary">Add</button>
   </mat-card-actions>
 </mat-card>
+<mat-paginator *ngIf="page && page.totalElements >0"
+               [length]="page?.totalElements"
+               [pageSize]="10"
+               [pageSizeOptions]="[10, 25, 50, 100]"
+               aria-label="Select page"
+               (page)="onPageEvent($event)"
+></mat-paginator>
