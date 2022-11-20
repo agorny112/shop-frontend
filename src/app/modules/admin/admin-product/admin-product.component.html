@@ -1,6 +1,6 @@
 <h1>Product list</h1>
 
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
 
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef> Id </th>
@@ -20,3 +20,10 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<mat-paginator
+               [pageSizeOptions]="[25, 50, 100]"
+               [pageSize]="25"
+               showFirstLastButtons=""
+               [length]="totalElements">
+</mat-paginator>
