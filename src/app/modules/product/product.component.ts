@@ -21,7 +21,7 @@ export class ProductComponent implements OnInit {
   }
 
   getProducts() {
-    this.getProductsPage(0, 25);
+    this.getProductsPage(0, 10);
   }
 
   onPageEvent(event: PageEvent) {

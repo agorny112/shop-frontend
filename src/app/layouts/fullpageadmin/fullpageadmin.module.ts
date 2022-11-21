@@ -7,6 +7,7 @@ import {FullpageadminComponent} from "./fullpageadmin.component";
 import {MaterialModule} from "../../shared/material.module";
 import {AdminProductComponent} from "../../modules/admin/admin-product/admin-product.component";
 import {AdminProductUpdateComponent} from "../../modules/admin/admin-product-update/admin-product-update.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {AdminProductUpdateComponent} from "../../modules/admin/admin-product-upd
     CommonModule,
     RouterModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class FullpageadminModule { }
