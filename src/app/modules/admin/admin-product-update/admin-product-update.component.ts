@@ -32,7 +32,7 @@ export class AdminProductUpdateComponent implements OnInit {
       category: [''],
       price: [''],
       currency: ['']
-    })
+    });
   }
 
   getProduct() {
